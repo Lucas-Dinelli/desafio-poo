@@ -33,36 +33,36 @@ public class Main {
 		bootcampJavaDeveloper.getConteudos().add(cursoDeJava);
 		bootcampJavaDeveloper.getConteudos().add(mentoriaDeJava);
 		
-		Dev devLucas = new Dev("Lucas");
-		devLucas.inscreverBootcamp(bootcampJavaDeveloper);
+		Dev primeiroDev = new Dev("Lucas");
+		primeiroDev.inscreverBootcamp(bootcampJavaDeveloper);
 		
-		Dev devCamila = new Dev("Camila");
-		devCamila.inscreverBootcamp(bootcampJavaDeveloper);
+		Dev segundoDev = new Dev("Camila");
+		segundoDev.inscreverBootcamp(bootcampJavaDeveloper);
 		
-		System.out.println(devLucas);
-		System.out.println(devCamila);
+		System.out.println(primeiroDev);
+		System.out.println(segundoDev);
 		
-		devLucas.progredir();
-		devCamila.progredir();
-		devCamila.progredir();
-		
-		inserirEspacamento();
-		
-		System.out.println(devLucas);	// Lucas progrediu uma vez no bootcamp
-		System.out.println(devCamila);	// Camila, por sua vez, progrediu duas
+		primeiroDev.progredir();
+		segundoDev.progredir();
+		segundoDev.progredir();
 		
 		inserirEspacamento();
 		
-		devLucas.progredir();
-		devCamila.progredir();
-		
-		System.out.println(devLucas);	// Lucas progrediu mais uma vez, faltando só a mentoria
-		System.out.println(devCamila);	// Camila também progrediu e finalizou o bootcamp
+		System.out.println(primeiroDev);	// Lucas progrediu uma vez no bootcamp
+		System.out.println(segundoDev);	// Camila, por sua vez, progrediu duas
 		
 		inserirEspacamento();
 		
-		System.out.println("XP de " + devLucas.getNome() + " = " + devLucas.verificarXp());
-		System.out.println("XP de " + devCamila.getNome() + " = " + devCamila.verificarXp());
+		primeiroDev.progredir();
+		segundoDev.progredir();
+		
+		System.out.println(primeiroDev);	// Lucas progrediu mais uma vez, faltando só a mentoria
+		System.out.println(segundoDev);	// Camila também progrediu e finalizou o bootcamp
+		
+		inserirEspacamento();
+		
+		System.out.println("XP de " + primeiroDev.getNome() + " = " + primeiroDev.verificarXp());
+		System.out.println("XP de " + segundoDev.getNome() + " = " + segundoDev.verificarXp());
 		
 		inserirEspacamento();
 		
